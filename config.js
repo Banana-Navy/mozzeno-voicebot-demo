@@ -1,0 +1,1 @@
+window.MOZZENO_VOICE_CONFIG = Object.freeze({"agentId":"agent_2201kxqfm74pekabwc6f6j43q64m","conversationTokenEndpoint":"","signedUrlEndpoint":"","deploymentStatus":"public_demo","allowedHosts":["banana-navy.github.io","localhost","127.0.0.1"],"transport":"allowlist_webrtc"});
