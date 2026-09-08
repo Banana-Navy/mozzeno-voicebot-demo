@@ -6,7 +6,7 @@
     <meta name="description" content="Architecture et démonstration du voicebot d'accueil trilingue mozzeno" />
     <title>mozzeno Welcome - voicebot d'accueil</title>
     <link rel="icon" href="assets/mozzeno-logo.svg" />
-    <link rel="stylesheet" href="styles.css?v=20260903-8" />
+    <link rel="stylesheet" href="styles.css?v=20260908-1" />
   </head>
   <body>
     <a class="skip-link" href="#content">Aller au contenu</a>
@@ -213,7 +213,7 @@
           <article data-bento><header class="trust-card-heading"><span class="trust-icon"><svg aria-hidden="true" focusable="false"><use href="#i-headset-out" /></svg></span><b>06</b></header><h3>Humain dans la boucle</h3><p>Dans l'architecture cible, KYC, offre, assurance, regroupement et cas sensibles seront routés vers un conseiller après déploiement.</p></article>
         </div>
         <div class="security-lanes" data-bento><div><b>Entrée</b><span>Consentement · rate limit · anti-replay · validation</span></div><i>→</i><div><b>Conversation</b><span>périmètre · sources · droits · abstention</span></div><i>→</i><div><b>Action</b><span>idempotence · timeout · preuve · audit</span></div><i>→</i><div><b>Sortie</b><span>PII · provenance · langage prudent · escalade</span></div></div>
-        <div class="privacy-banner"><svg aria-hidden="true" focusable="false"><use href="#i-shield" /></svg><p>N'utilisez aucune donnée bancaire ou sensible. Pour tester un rappel, privilégiez un nom et un numéro fictifs.</p></div>
+        <div class="privacy-banner"><svg aria-hidden="true" focusable="false"><use href="#i-shield" /></svg><p>Après consentement, l'audio de démonstration est conservé au maximum 30 jours. N'utilisez aucune donnée bancaire ou sensible et privilégiez des coordonnées fictives.</p></div>
       </div></section>
 
       <section class="final-cta"><div class="shell"><div><p class="kicker mint">PROTOTYPE MOZZENO</p><h2>Une voix naturelle.<br />Un système qui reste maître.</h2></div><button class="button light-button call-open" type="button">Tester la conversation <span>→</span></button></div></section>
@@ -244,8 +244,12 @@
             <span class="voice-latency" aria-live="polite">Latence : à mesurer</span>
           </div>
           <div class="voice-meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <label class="recording-consent">
+            <input class="voice-recording-consent" type="checkbox" />
+            <span><b>J'accepte l'enregistrement de cette conversation de démonstration.</b><small>L'audio est conservé au maximum 30 jours. Il peut être traité par Banana Navy, ElevenLabs et le fournisseur du modèle de langage pour fournir, tester et améliorer le service. N'utilisez aucune donnée bancaire ou sensible.</small></span>
+          </label>
           <div class="voice-controls">
-            <button class="voice-control voice-start" type="button">Démarrer l'appel</button>
+            <button class="voice-control voice-start" type="button" disabled>Démarrer l'appel</button>
             <button class="voice-control voice-mute" type="button" aria-pressed="false" disabled>Couper le micro</button>
             <button class="voice-control voice-stop" type="button" disabled>Terminer</button>
           </div>
@@ -254,13 +258,13 @@
             <a href="https://www.mozzeno.com/fr/support-et-contact/" target="_blank" rel="noreferrer">Contacter un conseiller</a>
           </div>
           <button class="voice-export" type="button" disabled>Exporter les métriques techniques</button>
-          <p class="voice-runtime-note">Le changement de langue reste automatique pendant l'appel. Les mesures restent en mémoire et ne contiennent ni audio ni transcription.</p>
+          <p class="voice-runtime-note">Le changement de langue reste automatique pendant l'appel. Les mesures techniques du navigateur restent en mémoire et ne contiennent ni audio ni transcription ; l'enregistrement de la conversation est géré séparément selon l'accord ci-dessus.</p>
         </div>
         <p class="panel-privacy">Le microphone n'est demandé qu'après votre action. Fermer cette fenêtre termine la session et libère le microphone.</p>
       </section>
     </div>
 
-    <script src="config.js?v=20260904-3"></script>
-    <script src="app.bundle.js?v=20260904-3"></script>
+    <script src="config.js?v=20260908-1"></script>
+    <script src="app.bundle.js?v=20260908-1"></script>
   </body>
 </html>
