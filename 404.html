@@ -6,7 +6,7 @@
     <meta name="description" content="Démonstration du voicebot inbound trilingue mozzeno : accueil, réponses générales et demandes de rappel, avec une extension outbound pour les campagnes de rappel et de prévention." />
     <title>mozzeno Welcome — voicebot inbound trilingue</title>
     <link rel="icon" href="assets/mozzeno-logo.svg" />
-    <link rel="stylesheet" href="styles.css?v=20261016-7" />
+    <link rel="stylesheet" href="styles.css?v=20261016-12" />
   </head>
   <body>
     <a class="skip-link" href="#content">Aller au contenu</a>
@@ -47,7 +47,7 @@
       <nav aria-label="Navigation principale">
         <a href="#experience">Expérience</a><a href="#scenarios">Scénarios</a><a href="#architecture">Architecture</a><a href="#trust">Sécurité</a>
       </nav>
-      <button class="header-cta call-open" type="button">Tester la voix</button>
+      <a class="header-cta phone-scroll-cta" href="tel:+3271496732">Tester la voix</a>
       <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
     </header>
 
@@ -57,7 +57,7 @@
           <p class="kicker accent">VOICEBOT INBOUND · FR-BE / NL-BE / EN</p>
           <h1>Chaque demande,<br /><span>bien orientée.</span></h1>
           <p class="hero-lead">Un accueil vocal trilingue pour qualifier la demande, répondre aux questions générales et enregistrer une demande de rappel. Cette démonstration est inbound&nbsp;; une solution outbound existe aussi pour les campagnes de rappel ou de prévention, avec des règles métier et des consentements définis en amont.</p>
-          <div class="hero-actions"><button class="button primary call-open" type="button">Démarrer une conversation <span>→</span></button><a class="button phone-cta" href="tel:+3271496732">Appeler le voicebot · +32 71 49 67 32</a><a class="text-link" href="#architecture">Comprendre le fonctionnement</a></div>
+          <div class="hero-actions"><button class="button primary call-open" type="button">Démarrer une conversation</button><a class="button phone-cta" href="tel:+3271496732">Appeler le voicebot · +32 71 49 67 32</a><a class="text-link" href="#architecture">Comprendre le fonctionnement</a></div>
           <ul class="hero-proof"><li><b>3</b><span>langues configurées</span></li><li><b>1</b><span>question à la fois</span></li><li><b>0</b><span>accès au dossier client</span></li></ul>
         </div>
         <div class="voice-stage" aria-label="Aperçu de l'expérience vocale">
@@ -102,7 +102,6 @@
             </ol>
             <div class="experience-visual" aria-hidden="true">
               <span class="experience-orbit"></span><span class="experience-dots"></span>
-              <span class="flow-arrow flow-arrow-in"></span><span class="flow-arrow flow-arrow-out"></span>
               <div class="phone-demo" data-bento>
                 <div class="speaker"></div>
                 <div class="secure-label"><svg aria-hidden="true" focusable="false"><use href="#i-shield-lock" /></svg><span>Session audio sécurisée</span></div>
@@ -159,24 +158,24 @@
               <div class="pipeline-lane" aria-label="Écouter">
                 <div class="lane-label" aria-hidden="true"><strong>A</strong><span></span><div><b>Écouter</b></div></div>
                 <div class="lane-cards">
-                  <article data-bento class="pipeline-card tone-voice"><b>01</b><div class="pipeline-visual"><img src="assets/architecture-01-secure-audio.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Canal audio chiffré</h3><p>Flux protégé · consentement</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
-                  <article data-bento class="pipeline-card tone-voice"><b>02</b><div class="pipeline-visual"><img src="assets/architecture-02-voice-to-text.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Voix vers texte</h3><p>Fin de parole · transcription progressive</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
+                  <article data-bento class="pipeline-card tone-voice"><b>01</b><div class="pipeline-visual"><img src="assets/architecture-01-secure-audio.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Canal audio chiffré</h3><p>Flux protégé · consentement</p></div></article>
+                  <article data-bento class="pipeline-card tone-voice"><b>02</b><div class="pipeline-visual"><img src="assets/architecture-02-voice-to-text.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Voix vers texte</h3><p>Fin de parole · transcription progressive</p></div></article>
                   <article data-bento class="pipeline-card tone-control"><b>03</b><div class="pipeline-visual"><img src="assets/architecture-03-authorized-intent.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Intention cadrée</h3><p>Périmètre · schéma fermé</p></div></article>
                 </div>
               </div>
               <div class="pipeline-lane" aria-label="Comprendre et décider">
                 <div class="lane-label" aria-hidden="true"><strong>B</strong><span></span><div><b>Comprendre <br />&amp; décider</b></div></div>
                 <div class="lane-cards">
-                  <article data-bento class="pipeline-card tone-data"><b>04</b><div class="pipeline-visual"><img src="assets/architecture-04-controlled-context.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Contexte contrôlé</h3><p>Sources de référence · versionnées</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
-                  <article data-bento class="pipeline-card tone-control is-focus"><b>05</b><div class="pipeline-visual"><img src="assets/architecture-05-constrained-response.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Réponse contrainte</h3><p>Courte · sourcée · outils limités</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
+                  <article data-bento class="pipeline-card tone-data"><b>04</b><div class="pipeline-visual"><img src="assets/architecture-04-controlled-context.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Contexte contrôlé</h3><p>Sources de référence · versionnées</p></div></article>
+                  <article data-bento class="pipeline-card tone-control is-focus"><b>05</b><div class="pipeline-visual"><img src="assets/architecture-05-constrained-response.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Réponse contrainte</h3><p>Courte · sourcée · outils limités</p></div></article>
                   <article data-bento class="pipeline-card tone-control"><b>06</b><div class="pipeline-visual"><img src="assets/architecture-06-deterministic-action.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Action déterministe</h3><p>Identité · permissions · anti-rejeu</p></div></article>
                 </div>
               </div>
               <div class="pipeline-lane" aria-label="Vérifier et répondre">
                 <div class="lane-label" aria-hidden="true"><strong>C</strong><span></span><div><b>Vérifier <br />&amp; répondre</b></div></div>
                 <div class="lane-cards">
-                  <article data-bento class="pipeline-card tone-data"><b>07</b><div class="pipeline-visual"><img src="assets/architecture-07-minimal-reading.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Lecture minimale</h3><p>Moindre privilège · audit</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
-                  <article data-bento class="pipeline-card tone-control"><b>08</b><div class="pipeline-visual"><img src="assets/architecture-08-controlled-response.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Réponse contrôlée</h3><p>Provenance · preuve d'action</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
+                  <article data-bento class="pipeline-card tone-data"><b>07</b><div class="pipeline-visual"><img src="assets/architecture-07-minimal-reading.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Lecture minimale</h3><p>Moindre privilège · audit</p></div></article>
+                  <article data-bento class="pipeline-card tone-control"><b>08</b><div class="pipeline-visual"><img src="assets/architecture-08-controlled-response.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Réponse contrôlée</h3><p>Provenance · preuve d'action</p></div></article>
                   <article data-bento class="pipeline-card tone-voice"><b>09</b><div class="pipeline-visual"><img src="assets/architecture-09-text-to-voice.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Texte vers voix</h3><p>FR / NL / EN · interruption</p></div></article>
                 </div>
               </div>
@@ -189,8 +188,8 @@
             <header class="engine-hero"><p class="kicker accent">INGÉNIERIE DE LA CONVERSATION</p><h2 id="engine-title">Une chaîne vocale coordonnée,<br />du premier mot à la réponse.</h2><p>L’orchestrateur coordonne la transcription, la préparation de la réponse et sa restitution.<br />Il gère les tours de parole, les interruptions et les traitements en cours.</p></header>
 
             <div class="engine-grid">
-              <article class="engine-card" data-bento><p class="engine-eyebrow">STT · RECONNAISSANCE VOCALE</p><div class="engine-card-visual" aria-hidden="true"><img src="assets/engine-01-speech-to-text.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /></div><h3>Transcrire la parole</h3><ul><li>Résultats partiels, puis transcription stabilisée.</li><li>Vocabulaire métier et noms propres configurés selon le moteur.</li><li>Clarification des éléments ambigus avant une action sensible.</li></ul><span class="engine-card-arrow" aria-hidden="true">→</span></article>
-              <article class="engine-card" data-bento><p class="engine-eyebrow">ORCHESTRATION · LLM</p><div class="engine-card-visual" aria-hidden="true"><img src="assets/engine-02-orchestration.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /></div><h3>Préparer la réponse</h3><ul><li>Contexte utile et état du dialogue.</li><li>Recherche d’information et appels d’outils selon le scénario.</li><li>Réponses courtes, formulées pour être entendues.</li></ul><span class="engine-card-arrow" aria-hidden="true">→</span></article>
+              <article class="engine-card" data-bento><p class="engine-eyebrow">STT · RECONNAISSANCE VOCALE</p><div class="engine-card-visual" aria-hidden="true"><img src="assets/engine-01-speech-to-text.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /></div><h3>Transcrire la parole</h3><ul><li>Résultats partiels, puis transcription stabilisée.</li><li>Vocabulaire métier et noms propres configurés selon le moteur.</li><li>Clarification des éléments ambigus avant une action sensible.</li></ul></article>
+              <article class="engine-card" data-bento><p class="engine-eyebrow">ORCHESTRATION · LLM</p><div class="engine-card-visual" aria-hidden="true"><img src="assets/engine-02-orchestration.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /></div><h3>Préparer la réponse</h3><ul><li>Contexte utile et état du dialogue.</li><li>Recherche d’information et appels d’outils selon le scénario.</li><li>Réponses courtes, formulées pour être entendues.</li></ul></article>
               <article class="engine-card" data-bento><p class="engine-eyebrow">TTS · SYNTHÈSE VOCALE</p><div class="engine-card-visual" aria-hidden="true"><img src="assets/engine-03-multilingual-voice.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /></div><h3>Restituer une voix adaptée</h3><ul><li>Profils vocaux distincts pour le FR-BE, le NL-BE et l’anglais.</li><li>Débit, pauses et lecture des nombres pensés pour l’oral.</li><li>Validation par locuteurs natifs à finaliser avant production.</li></ul></article>
             </div>
 
@@ -204,7 +203,7 @@
             </article>
 
             <article class="engine-measurement" data-bento aria-labelledby="engine-measure-title">
-              <div class="engine-measure-intro"><div class="engine-measure-visual" aria-hidden="true"><img src="assets/engine-07-perceived-latency.webp" width="1100" height="550" loading="lazy" decoding="async" alt="" /></div><h3 id="engine-measure-title">Mesurer ce que l’appelant perçoit</h3><p>Fin de parole <span aria-hidden="true">→</span> premier audio utile</p></div>
+              <div class="engine-measure-intro"><div class="engine-measure-visual" aria-hidden="true"><img src="assets/engine-07-perceived-latency.webp" width="1100" height="550" loading="lazy" decoding="async" alt="" /></div><h3 id="engine-measure-title">Mesurer ce que l’appelant perçoit</h3><p>De la fin de parole au premier audio utile</p></div>
               <div class="engine-measure-details">
                 <div class="engine-metrics">
                   <section class="engine-metric"><img src="assets/engine-08-response-metric.webp" width="320" height="320" loading="lazy" decoding="async" alt="" aria-hidden="true" /><h4>Réponse</h4><p>Latence p50 / p95</p></section>
@@ -262,7 +261,7 @@
         <article class="trust-trace-card" data-bento><div class="trust-visual trust-visual-trace" aria-hidden="true"><img src="assets/security-07-data-traceability.webp" width="960" height="480" loading="lazy" decoding="async" alt="" /></div><div class="trust-trace-copy"><h3>Protection des données &amp; traçabilité</h3><p>Les accès, le chiffrement et les durées de conservation sont définis et validés avant la production. Les sources, contrôles et opérations restent traçables avec des journaux minimisés.</p><ul class="trust-trace-points" aria-label="Mesures de protection"><li>Chiffrement</li><li>Cloisonnement</li><li>Conservation</li><li>Audit</li></ul></div></article>
       </div></section>
 
-      <section class="final-cta"><div class="shell"><div><p class="kicker mint">DÉMONSTRATEUR INBOUND · CAPACITÉ OUTBOUND</p><h2>Une conversation naturelle.<br />Des actions qui restent vérifiables.</h2></div><button class="button light-button call-open" type="button">Tester la conversation <span>→</span></button></div></section>
+      <section class="final-cta"><div class="shell"><div><p class="kicker mint">DÉMONSTRATEUR INBOUND · CAPACITÉ OUTBOUND</p><h2>Une conversation naturelle.<br />Des actions qui restent vérifiables.</h2></div><a class="button light-button phone-scroll-cta" href="tel:+3271496732">Tester la conversation</a></div></section>
     </main>
 
     <footer class="site-footer" id="footer">
@@ -311,7 +310,7 @@
       </section>
     </div>
 
-    <script src="config.js?v=20261016-7"></script>
-    <script src="app.bundle.js?v=20261016-7"></script>
+    <script src="config.js?v=20261016-12"></script>
+    <script src="app.bundle.js?v=20261016-12"></script>
   </body>
 </html>
