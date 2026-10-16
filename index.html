@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Architecture et démonstration du voicebot d'accueil trilingue mozzeno" />
-    <title>mozzeno Welcome - voicebot d'accueil</title>
+    <meta name="description" content="Démonstration du voicebot inbound trilingue mozzeno : accueil, réponses générales et demandes de rappel, avec une extension outbound pour les campagnes de rappel et de prévention." />
+    <title>mozzeno Welcome — voicebot inbound trilingue</title>
     <link rel="icon" href="assets/mozzeno-logo.svg" />
-    <link rel="stylesheet" href="styles.css?v=20260908-1" />
+    <link rel="stylesheet" href="styles.css?v=20261016-7" />
   </head>
   <body>
     <a class="skip-link" href="#content">Aller au contenu</a>
@@ -38,7 +38,7 @@
       <symbol id="i-doc-lock" viewBox="0 0 64 64"><path d="M10 5h28l11 11v39H10zM38 5v12h11M18 28h17M18 37h13"/><rect class="mint-fill" x="37" y="38" width="23" height="21" rx="4"/><path class="white-stroke" d="M43 38v-4a5.5 5.5 0 0 1 11 0v4M49 47v5"/></symbol>
       <symbol id="i-chat" viewBox="0 0 64 64"><path d="M10 12h44v32H31L19 54V44h-9z"/><path class="mint-stroke" d="M20 24h24M20 32h17"/></symbol>
     </svg>
-    <div class="demo-strip"><b>Démonstrateur</b><span></span>Aucun dossier réel - aucune décision de crédit</div>
+    <div class="demo-strip"><b>Démonstrateur inbound</b><span></span>Aucun dossier réel · aucune décision de crédit</div>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="mozzeno Welcome, accueil">
         <img src="assets/mozzeno-logo.svg" alt="mozzeno" />
@@ -54,11 +54,11 @@
     <main id="content">
       <section class="hero shell" id="top">
         <div class="hero-copy">
-          <p class="kicker accent">ACCUEIL VOCAL - FR / NL / EN</p>
+          <p class="kicker accent">VOICEBOT INBOUND · FR-BE / NL-BE / EN</p>
           <h1>Chaque demande,<br /><span>bien orientée.</span></h1>
-          <p class="hero-lead">Une voix chaleureuse pour accueillir, expliquer et guider. Un système contrôlé pour savoir quand répondre, quand vérifier et quand passer la main.</p>
-          <div class="hero-actions"><button class="button primary call-open" type="button">Démarrer une conversation <span>→</span></button><a class="text-link" href="#architecture">Comprendre le fonctionnement</a></div>
-          <ul class="hero-proof"><li><b>3</b><span>langues d'accueil</span></li><li><b>1</b><span>question à la fois</span></li><li><b>0</b><span>dossier client connecté</span></li></ul>
+          <p class="hero-lead">Un accueil vocal trilingue pour qualifier la demande, répondre aux questions générales et enregistrer une demande de rappel. Cette démonstration est inbound&nbsp;; une solution outbound existe aussi pour les campagnes de rappel ou de prévention, avec des règles métier et des consentements définis en amont.</p>
+          <div class="hero-actions"><button class="button primary call-open" type="button">Démarrer une conversation <span>→</span></button><a class="button phone-cta" href="tel:+3271496732">Appeler le voicebot · +32 71 49 67 32</a><a class="text-link" href="#architecture">Comprendre le fonctionnement</a></div>
+          <ul class="hero-proof"><li><b>3</b><span>langues configurées</span></li><li><b>1</b><span>question à la fois</span></li><li><b>0</b><span>accès au dossier client</span></li></ul>
         </div>
         <div class="voice-stage" aria-label="Aperçu de l'expérience vocale">
           <div class="smile-shape" aria-hidden="true"><i></i><i></i></div>
@@ -76,13 +76,13 @@
 
       <section class="experience-band" id="experience">
         <div class="shell">
-          <p class="kicker mint">EXPÉRIENCE CONVERSATIONNELLE · CIBLE</p><h2>Comment fonctionnera la démo ?</h2>
+          <p class="kicker mint">PARCOURS DE DÉMONSTRATION</p><h2>Comment fonctionne la démo&nbsp;?</h2>
           <div class="experience-layout">
             <ol class="experience-steps">
               <li data-bento>
                 <b class="step-number">1</b>
                 <span class="step-icon"><svg aria-hidden="true" focusable="false"><use href="#i-shield-lock" /></svg></span>
-                <div><h3>Lancez la démo</h3><p>Autorisez le microphone et ouvrez une session audio sécurisée.</p></div>
+                <div><h3>Lancez la session</h3><p>Autorisez le microphone pour ouvrir une session vocale chiffrée.</p></div>
               </li>
               <li data-bento>
                 <b class="step-number">2</b>
@@ -92,12 +92,12 @@
               <li data-bento>
                 <b class="step-number">3</b>
                 <span class="step-icon"><svg aria-hidden="true" focusable="false"><use href="#i-chat" /></svg></span>
-                <div><h3>Recevez une réponse guidée</h3><p>Une réponse issue d'une source autorisée — ou une abstention explicite.</p></div>
+                <div><h3>Recevez une réponse vérifiable</h3><p>Le voicebot s’appuie sur une source approuvée. Si l’information manque, il le dit clairement.</p></div>
               </li>
               <li data-bento>
                 <b class="step-number">4</b>
                 <span class="step-icon"><svg aria-hidden="true" focusable="false"><use href="#i-user-status" /></svg></span>
-                <div><h3>Relais humain après déploiement</h3><p>Dans cette démo, le bot indique clairement que ce transfert n'est pas encore connecté.</p></div>
+                <div><h3>Demandez un rappel</h3><p>Après votre accord, le voicebot recueille vos coordonnées, le motif et une heure indicative. Aucun rendez-vous n’est réservé.</p></div>
               </li>
             </ol>
             <div class="experience-visual" aria-hidden="true">
@@ -111,7 +111,7 @@
                 <p class="message-bubble visitor">Quels documents dois-je<br />préparer en général ?</p>
                 <div class="phone-mic"><svg aria-hidden="true" focusable="false"><use href="#i-mic" /></svg></div>
                 <p class="hold-label">Maintenez pour parler</p>
-                <div class="human-ready"><svg aria-hidden="true" focusable="false"><use href="#i-user-status" /></svg><span>Relais humain après déploiement</span></div>
+                <div class="human-ready"><svg aria-hidden="true" focusable="false"><use href="#i-user-status" /></svg><span>Demande de rappel enregistrée</span></div>
               </div>
             </div>
           </div>
@@ -119,23 +119,33 @@
       </section>
 
       <section class="scenarios-section shell" id="scenarios">
-        <div class="section-heading"><div><p class="kicker accent">SCÉNARIOS ISSUS DES SCRIPTS D'APPEL</p><h2>Ce qui fonctionne déjà.<br />Ce qui reste sous contrôle humain.</h2></div><p>Chaque scénario est classé selon sa réalité actuelle. « Démo prête » signifie testable sans dossier. « Après connexion » exige les API et droits mozzeno. « Conseiller » reste humain.</p></div>
+        <div class="section-heading"><div><p class="kicker accent">PÉRIMÈTRE FONCTIONNEL</p><h2>Automatiser ce qui est sûr.<br />Confier le reste au bon interlocuteur.</h2></div><p>Les fonctions sont présentées selon leur état réel&nbsp;: actives dans la démonstration, disponibles après intégration métier ou réservées à un conseiller.</p></div>
+        <div class="service-modes" aria-label="Modes de déploiement inbound et outbound">
+          <article class="service-mode-card is-inbound" data-bento>
+            <span class="service-mode-icon"><svg aria-hidden="true" focusable="false"><use href="#i-headset" /></svg></span>
+            <div><p class="kicker accent">INBOUND · DÉMONSTRATION ACTIVE</p><h3>Accueillir et orienter les appels entrants.</h3><p>Détection de la langue et de l’intention, réponses générales sourcées et enregistrement d’une demande de rappel écrite.</p><ul><li>FR-BE, NL-BE et EN</li><li>Réponse cadrée ou limite explicite</li><li>Demande consentie, sans prise de rendez-vous</li></ul></div>
+          </article>
+          <article class="service-mode-card is-outbound" data-bento>
+            <span class="service-mode-icon"><svg aria-hidden="true" focusable="false"><use href="#i-headset-out" /></svg></span>
+            <div><p class="kicker accent">OUTBOUND · SOLUTION DISPONIBLE</p><h3>Organiser des campagnes de rappel ou de prévention.</h3><p>Le module outbound applique les listes, plages horaires, priorités, tentatives, conditions d’arrêt et règles de consentement validées avec mozzeno. Il n’est pas activé dans cette démonstration.</p><ul><li>Rappels et messages de prévention</li><li>Cadence et tentatives maîtrisées</li><li>Résultat tracé et escalade vers un conseiller</li></ul></div>
+          </article>
+        </div>
         <div class="scenario-groups">
-          <section><div class="group-title"><span class="status ready"></span><div><b>Démo prête</b><small>Aucun dossier client · données de rappel minimales et consenties</small></div></div><div class="scenario-grid">
+          <section><div class="group-title"><span class="status ready"></span><div><b>Disponible dans la démonstration</b><small>Sans dossier client · données de rappel minimales et consenties</small></div></div><div class="scenario-grid">
             <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-wave" /></svg><b>ACCUEIL</b><h3>Orientation trilingue</h3><p>Accueil chaleureux, choix de langue, intention et reformulation si nécessaire.</p><ul><li>Français belge</li><li>Néerlandais belge</li><li>Anglais</li></ul></article>
-            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-document" /></svg><b>LISTE 1 - GUIDANCE</b><h3>Premiers justificatifs</h3><p>Explique où téléverser les documents et les grandes catégories attendues, sans prétendre connaître le dossier.</p></article>
-            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-clipboard" /></svg><b>FAQ</b><h3>Parcours et signature</h3><p>Réponses sourcées sur la demande en ligne, le tableau de bord, itsme et eID.</p></article>
-            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-headset" /></svg><b>ASSISTANCE</b><h3>Rappel sur agenda fictif</h3><p>Propose des créneaux selon la date réelle et les horaires de la démo, puis enregistre le nom et le numéro uniquement après consentement. Aucun dossier client.</p></article>
+            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-document" /></svg><b>GUIDANCE PUBLIQUE</b><h3>Premiers justificatifs</h3><p>Explique où téléverser les documents et les grandes catégories attendues, sans prétendre connaître le dossier.</p></article>
+            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-clipboard" /></svg><b>PARCOURS</b><h3>Demande et signature en ligne</h3><p>Réponses sourcées sur la demande en ligne, le tableau de bord, itsme et eID.</p></article>
+            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-headset" /></svg><b>RAPPEL</b><h3>Demande de rappel par e-mail</h3><p>Recueille les coordonnées, le motif et une préférence horaire après consentement, puis enregistre une demande structurée pour transmission par e-mail. Aucun rendez-vous n’est réservé.</p></article>
           </div></section>
-          <section><div class="group-title"><span class="status pending"></span><div><b>Après connexion sécurisée</b><small>Authentification, autorisation et outils métier requis</small></div></div><div class="scenario-grid">
-            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-doc-shield" /></svg><b>LISTE 2</b><h3>Documents réellement manquants</h3><p>Lecture du dossier authentifié, liste précise des pièces, échéance et suivi multicanal.</p><span class="demo-answer">En démo : « Je ne peux pas encore consulter votre dossier. »</span></article>
-            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-euro-next" /></svg><b>FCALL</b><h3>Finalisation du dossier</h3><p>Résumé contrôlé du montant, de la durée, de la mensualité, de la signature et du versement.</p></article>
-            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-ticket" /></svg><b>SUIVI</b><h3>Email, SMS et ticket</h3><p>Actions idempotentes, preuve de livraison, statut d'exécution et journal d'audit.</p></article>
+          <section><div class="group-title"><span class="status pending"></span><div><b>Après intégration et validation métier</b><small>Authentification, autorisation et outils métier requis</small></div></div><div class="scenario-grid">
+            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-doc-shield" /></svg><b>DOSSIER</b><h3>Documents réellement manquants</h3><p>Lecture du dossier authentifié, liste précise des pièces, échéance et suivi multicanal.</p><span class="demo-answer">Réponse actuelle&nbsp;: « Je ne peux pas encore consulter votre dossier. »</span></article>
+            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-ticket" /></svg><b>SUIVI</b><h3>E-mail, SMS et ticket</h3><p>Actions idempotentes, preuve de livraison, statut d’exécution et journal d’audit.</p></article>
           </div></section>
-          <section><div class="group-title"><span class="status human"></span><div><b>Conseiller obligatoire</b><small>Décision ou devoir de conseil</small></div></div><div class="scenario-grid">
-            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-user-lock" /></svg><b>KYC</b><h3>Vérification d'identité</h3><p>Aucune donnée de dossier avant authentification forte. Les cas ambigus passent à un agent humain.</p></article>
-            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-euro-back" /></svg><b>OPTI / OUT</b><h3>Regroupement de crédits</h3><p>Aucun chiffrage ni recommandation autonome. Contexte, contrôles réglementaires et devoir de conseil.</p></article>
-            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-headset-out" /></svg><b>ASRD</b><h3>Assurance solde restant dû</h3><p>Le voicebot peut expliquer le passage vers un conseiller, mais ne vend ni ne formalise seul une assurance.</p></article>
+          <section><div class="group-title"><span class="status human"></span><div><b>Conseiller requis</b><small>Décision, conseil ou confirmation humaine</small></div></div><div class="scenario-grid">
+            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-user-lock" /></svg><b>IDENTITÉ</b><h3>Vérification KYC</h3><p>Aucune donnée de dossier avant authentification forte. Les cas ambigus passent à un conseiller.</p></article>
+            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-euro-next" /></svg><b>FINALISATION</b><h3>Finalisation du dossier</h3><p>Le montant, la durée, la mensualité, la signature et le versement restent confirmés avec un conseiller.</p></article>
+            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-euro-back" /></svg><b>CRÉDIT</b><h3>Regroupement de crédits</h3><p>Aucun chiffrage ni recommandation autonome. Le contexte réglementaire et le devoir de conseil s’appliquent.</p></article>
+            <article data-bento><svg class="card-icon" aria-hidden="true" focusable="false"><use href="#i-headset-out" /></svg><b>ASSURANCE</b><h3>Assurance solde restant dû</h3><p>Le voicebot peut expliquer le passage vers un conseiller, mais ne vend ni ne formalise seul une assurance.</p></article>
           </div></section>
         </div>
       </section>
@@ -143,90 +153,126 @@
       <section class="architecture-section" id="architecture">
         <div class="architecture-overview">
           <div class="shell">
-            <div class="architecture-hero"><div><p class="kicker mint">ARCHITECTURE FONCTIONNELLE</p><h2>De la voix à une réponse<br /><span>contrôlée, en neuf étapes.</span></h2></div><div><p>Le pipeline vocal rapide et le pipeline de contrôle travaillent ensemble. Le modèle propose ; les règles, les droits et les sources décident.</p></div></div>
-            <div class="architecture-status" role="note"><b>Démo vocale active</b><span>Agent trilingue connecté · connexions métier mozzeno non activées</span></div>
+            <div class="architecture-hero"><div><p class="kicker mint">ARCHITECTURE FONCTIONNELLE</p><h2>De la voix à une réponse<br /><span>contrôlée, en neuf étapes.</span></h2></div><div><p>Le modèle propose. Les règles, les droits et les sources décident.</p></div></div>
+            <div class="architecture-status" role="note"><i aria-hidden="true"></i><b>Démo vocale active</b><span>Agent trilingue connecté · connexions métier mozzeno non activées</span></div>
             <div class="pipeline" aria-label="Pipeline vocal cible en neuf étapes">
-              <div class="pipeline-lane">
-                <div class="lane-label"><span>Phase A</span><b>Écouter</b><span class="phase-icon"><svg aria-hidden="true" focusable="false"><use href="#i-ear" /></svg></span></div>
+              <div class="pipeline-lane" aria-label="Écouter">
+                <div class="lane-label" aria-hidden="true"><strong>A</strong><span></span><div><b>Écouter</b></div></div>
                 <div class="lane-cards">
-                  <article data-bento class="tone-voice"><b>01</b><span class="pipeline-card-icon"><svg aria-hidden="true" focusable="false"><use href="#i-mic-lock" /></svg></span><div><h3>Canal audio sécurisé</h3><p>Flux chiffré · consentement</p></div></article>
-                  <article data-bento class="tone-voice"><b>02</b><span class="pipeline-card-icon"><svg aria-hidden="true" focusable="false"><use href="#i-wave" /></svg></span><div><h3>Voix vers texte</h3><p>VAD · continu · vocabulaire métier</p></div></article>
-                  <article data-bento class="tone-control"><b>03</b><span class="pipeline-card-icon"><svg aria-hidden="true" focusable="false"><use href="#i-shield" /></svg></span><div><h3>Intention autorisée</h3><p>Périmètre · schéma fermé</p></div></article>
+                  <article data-bento class="pipeline-card tone-voice"><b>01</b><div class="pipeline-visual"><img src="assets/architecture-01-secure-audio.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Canal audio chiffré</h3><p>Flux protégé · consentement</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
+                  <article data-bento class="pipeline-card tone-voice"><b>02</b><div class="pipeline-visual"><img src="assets/architecture-02-voice-to-text.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Voix vers texte</h3><p>Fin de parole · transcription progressive</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
+                  <article data-bento class="pipeline-card tone-control"><b>03</b><div class="pipeline-visual"><img src="assets/architecture-03-authorized-intent.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Intention cadrée</h3><p>Périmètre · schéma fermé</p></div></article>
                 </div>
               </div>
-              <div class="pipeline-lane">
-                <div class="lane-label"><span>Phase B</span><b>Comprendre<br /> &amp; décider</b><span class="phase-icon"><svg aria-hidden="true" focusable="false"><use href="#i-brain" /></svg></span></div>
+              <div class="pipeline-lane" aria-label="Comprendre et décider">
+                <div class="lane-label" aria-hidden="true"><strong>B</strong><span></span><div><b>Comprendre <br />&amp; décider</b></div></div>
                 <div class="lane-cards">
-                  <article data-bento class="tone-data"><b>04</b><span class="pipeline-card-icon"><svg aria-hidden="true" focusable="false"><use href="#i-doc-shield" /></svg></span><div><h3>Contexte contrôlé</h3><p>Sources de référence · versionnées</p></div></article>
-                  <article data-bento class="tone-voice is-focus"><b>05</b><span class="pipeline-card-icon"><svg aria-hidden="true" focusable="false"><use href="#i-chat" /></svg></span><div><h3>Réponse contrainte</h3><p>Courte · sourcée · outils limités</p></div></article>
-                  <article data-bento class="tone-control"><b>06</b><span class="pipeline-card-icon"><svg aria-hidden="true" focusable="false"><use href="#i-user-lock" /></svg></span><div><h3>Action déterministe</h3><p>Identité · permissions · anti-rejeu</p></div></article>
+                  <article data-bento class="pipeline-card tone-data"><b>04</b><div class="pipeline-visual"><img src="assets/architecture-04-controlled-context.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Contexte contrôlé</h3><p>Sources de référence · versionnées</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
+                  <article data-bento class="pipeline-card tone-control is-focus"><b>05</b><div class="pipeline-visual"><img src="assets/architecture-05-constrained-response.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Réponse contrainte</h3><p>Courte · sourcée · outils limités</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
+                  <article data-bento class="pipeline-card tone-control"><b>06</b><div class="pipeline-visual"><img src="assets/architecture-06-deterministic-action.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Action déterministe</h3><p>Identité · permissions · anti-rejeu</p></div></article>
                 </div>
               </div>
-              <div class="pipeline-lane">
-                <div class="lane-label"><span>Phase C</span><b>Vérifier<br /> &amp; répondre</b><span class="phase-icon"><svg aria-hidden="true" focusable="false"><use href="#i-shield" /></svg></span></div>
+              <div class="pipeline-lane" aria-label="Vérifier et répondre">
+                <div class="lane-label" aria-hidden="true"><strong>C</strong><span></span><div><b>Vérifier <br />&amp; répondre</b></div></div>
                 <div class="lane-cards">
-                  <article data-bento class="tone-data"><b>07</b><span class="pipeline-card-icon"><svg aria-hidden="true" focusable="false"><use href="#i-doc-lock" /></svg></span><div><h3>Lecture minimale</h3><p>Moindre privilège · audit</p></div></article>
-                  <article data-bento class="tone-control"><b>08</b><span class="pipeline-card-icon"><svg aria-hidden="true" focusable="false"><use href="#i-shield" /></svg></span><div><h3>Réponse contrôlée</h3><p>Provenance · preuve d'action</p></div></article>
-                  <article data-bento class="tone-voice"><b>09</b><span class="pipeline-card-icon"><svg aria-hidden="true" focusable="false"><use href="#i-speaker" /></svg></span><div><h3>Texte vers voix</h3><p>FR / NL / EN · interruption</p></div></article>
+                  <article data-bento class="pipeline-card tone-data"><b>07</b><div class="pipeline-visual"><img src="assets/architecture-07-minimal-reading.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Lecture minimale</h3><p>Moindre privilège · audit</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
+                  <article data-bento class="pipeline-card tone-control"><b>08</b><div class="pipeline-visual"><img src="assets/architecture-08-controlled-response.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Réponse contrôlée</h3><p>Provenance · preuve d'action</p></div><span class="pipeline-connector" aria-hidden="true">→</span></article>
+                  <article data-bento class="pipeline-card tone-voice"><b>09</b><div class="pipeline-visual"><img src="assets/architecture-09-text-to-voice.webp" width="768" height="512" loading="lazy" decoding="async" alt="" /></div><div class="pipeline-copy"><h3>Texte vers voix</h3><p>FR / NL / EN · interruption</p></div></article>
                 </div>
               </div>
-              <span class="pipeline-output" aria-hidden="true"><svg focusable="false"><use href="#i-wave" /></svg></span>
             </div>
             <div class="legend"><span><i class="voice"></i>Temps réel vocal</span><span><i class="control"></i>Contrôle déterministe</span><span><i class="data"></i>Données gouvernées</span></div>
           </div>
         </div>
         <div class="shell architecture-details">
-          <div class="deep-title"><p class="kicker mint">À L'INTÉRIEUR DU MOTEUR VOCAL</p><h2>Trois moteurs synchronisés,<br />pas une simple voix de navigateur.</h2></div>
-          <div class="deep-grid">
-            <article data-bento><header><span>STT</span><b>01</b></header><h3>Comprendre pendant que vous parlez</h3><ul><li>Audio découpé en petits paquets</li><li>Transcription partielle en continu</li><li>Détection de langue au démarrage</li><li>Vocabulaire : mozzeno, itsme, eID, BNB</li><li>Score de confiance et reformulation si faible</li></ul></article>
-            <article data-bento><header><span>LLM</span><b>02</b></header><h3>Raisonner dans un cadre fermé</h3><ul><li>Instructions système séparées des entrées utilisateur</li><li>Contexte limité au scénario courant</li><li>Recherche dans les seules sources approuvées</li><li>Appels d'outils typés, jamais accès libre</li><li>Réponse courte ou abstention explicite</li></ul></article>
-            <article data-bento><header><span>TTS</span><b>03</b></header><h3>Répondre avec une voix configurée</h3><ul><li>Une voix distincte par langue</li><li>Génération dès la première phrase contrôlée</li><li>Ponctuation conçue pour la prosodie</li><li>Profil web séparé du profil téléphonique</li><li>Interruption immédiate si l'appelant reprend</li></ul></article>
-          </div>
+          <section class="engine-section" id="engine" aria-labelledby="engine-title">
+            <header class="engine-hero"><p class="kicker accent">INGÉNIERIE DE LA CONVERSATION</p><h2 id="engine-title">Une chaîne vocale coordonnée,<br />du premier mot à la réponse.</h2><p>L’orchestrateur coordonne la transcription, la préparation de la réponse et sa restitution.<br />Il gère les tours de parole, les interruptions et les traitements en cours.</p></header>
 
-          <div class="latency-card" data-bento>
-            <div><p class="kicker mint">BUDGET DE LATENCE CIBLE</p><h3>Chaque milliseconde a une responsabilité.</h3><p>Ces valeurs visent un parcours simple sans appel d'outil et doivent être mesurées sur de vraies conversations ; ce ne sont pas encore des performances validées.</p></div>
-            <div class="latency-bars"><div><span>Fin de tour</span><i style="--w:22%"></i><b>mesurée</b></div><div><span>Compréhension</span><i style="--w:38%"></i><b>mesurée</b></div><div><span>Contrôle / outil</span><i style="--w:55%"></i><b>budget séparé</b></div><div><span>Premier audio</span><i style="--w:30%"></i><b>mesuré</b></div><div class="target"><span>Réponse simple perçue</span><i style="--w:76%"></i><b>cible p95 ≤ 1,85 s</b></div></div>
-          </div>
+            <div class="engine-grid">
+              <article class="engine-card" data-bento><p class="engine-eyebrow">STT · RECONNAISSANCE VOCALE</p><div class="engine-card-visual" aria-hidden="true"><img src="assets/engine-01-speech-to-text.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /></div><h3>Transcrire la parole</h3><ul><li>Résultats partiels, puis transcription stabilisée.</li><li>Vocabulaire métier et noms propres configurés selon le moteur.</li><li>Clarification des éléments ambigus avant une action sensible.</li></ul><span class="engine-card-arrow" aria-hidden="true">→</span></article>
+              <article class="engine-card" data-bento><p class="engine-eyebrow">ORCHESTRATION · LLM</p><div class="engine-card-visual" aria-hidden="true"><img src="assets/engine-02-orchestration.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /></div><h3>Préparer la réponse</h3><ul><li>Contexte utile et état du dialogue.</li><li>Recherche d’information et appels d’outils selon le scénario.</li><li>Réponses courtes, formulées pour être entendues.</li></ul><span class="engine-card-arrow" aria-hidden="true">→</span></article>
+              <article class="engine-card" data-bento><p class="engine-eyebrow">TTS · SYNTHÈSE VOCALE</p><div class="engine-card-visual" aria-hidden="true"><img src="assets/engine-03-multilingual-voice.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /></div><h3>Restituer une voix adaptée</h3><ul><li>Profils vocaux distincts pour le FR-BE, le NL-BE et l’anglais.</li><li>Débit, pauses et lecture des nombres pensés pour l’oral.</li><li>Validation par locuteurs natifs à finaliser avant production.</li></ul></article>
+            </div>
+
+            <article class="engine-realtime" data-bento aria-labelledby="engine-realtime-title">
+              <header class="engine-panel-header"><h3 id="engine-realtime-title">Une coordination en temps réel</h3><p>ÉCOUTE · PRISE DE PAROLE · REPRISE</p></header>
+              <div class="engine-realtime-grid">
+                <section class="engine-event"><div class="engine-event-visual" aria-hidden="true"><img src="assets/engine-04-turn-end.webp" width="720" height="480" loading="lazy" decoding="async" alt="" /></div><h4>Fin de tour</h4><p>Distinguer une pause d’une prise de parole terminée.</p></section>
+                <section class="engine-event"><div class="engine-event-visual" aria-hidden="true"><img src="assets/engine-05-barge-in.webp" width="720" height="480" loading="lazy" decoding="async" alt="" /></div><h4>Interruption de la réponse</h4><p>Couper la lecture et écarter les segments devenus obsolètes.</p></section>
+                <section class="engine-event"><div class="engine-event-visual" aria-hidden="true"><img src="assets/engine-06-controlled-wait.webp" width="720" height="480" loading="lazy" decoding="async" alt="" /></div><h4>Attente maîtrisée</h4><p>Signaler un traitement en cours, sans annoncer son résultat.</p></section>
+              </div>
+            </article>
+
+            <article class="engine-measurement" data-bento aria-labelledby="engine-measure-title">
+              <div class="engine-measure-intro"><div class="engine-measure-visual" aria-hidden="true"><img src="assets/engine-07-perceived-latency.webp" width="1100" height="550" loading="lazy" decoding="async" alt="" /></div><h3 id="engine-measure-title">Mesurer ce que l’appelant perçoit</h3><p>Fin de parole <span aria-hidden="true">→</span> premier audio utile</p></div>
+              <div class="engine-measure-details">
+                <div class="engine-metrics">
+                  <section class="engine-metric"><img src="assets/engine-08-response-metric.webp" width="320" height="320" loading="lazy" decoding="async" alt="" aria-hidden="true" /><h4>Réponse</h4><p>Latence p50 / p95</p></section>
+                  <section class="engine-metric"><span class="engine-wave-icon" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><h4>Interruption</h4><p>Délai d’arrêt audio</p></section>
+                  <section class="engine-metric"><img src="assets/engine-09-recognition-metric.webp" width="320" height="320" loading="lazy" decoding="async" alt="" aria-hidden="true" /><h4>Reconnaissance</h4><p>Erreurs sur termes métier</p></section>
+                </div>
+                <p class="engine-measure-note">Réponses documentaires et opérations métier mesurées séparément. <br />Réseau, contrôles et outils inclus.</p>
+                <div class="engine-objective"><img src="assets/engine-10-objective.webp" width="320" height="320" loading="lazy" decoding="async" alt="" aria-hidden="true" /><p>Objectifs définis&nbsp;; validation complète à finaliser par scénario, langue et canal.</p></div>
+              </div>
+            </article>
+          </section>
 
           <div class="data-section">
             <div class="section-heading light"><div><p class="kicker mint">COUCHE DE DONNÉES</p><h2>Quelle base pour quelle donnée ?</h2></div><p>Une seule technologie ne doit pas tout faire. Chaque stockage reçoit un périmètre, une durée et des droits propres.</p></div>
             <div class="data-grid">
-              <article data-bento><span>SQL</span><h3>PostgreSQL relationnel</h3><p>Source de vérité pour l'agenda fictif, les réservations, les statuts d'actions et les métadonnées d'audit.</p><ul><li>Contraintes fortes</li><li>Transactions</li><li>Row Level Security</li></ul><small>Agenda de rappel démo connecté · aucun dossier client</small></article>
+              <article data-bento><span>SQL</span><h3>PostgreSQL relationnel</h3><p>Source de vérité privée pour les demandes de rappel consenties, les statuts d’envoi et les métadonnées d’audit.</p><ul><li>Contraintes fortes</li><li>Transactions</li><li>Droits d’accès par ligne</li></ul><small>Rappel par note e-mail · aucune réservation</small></article>
               <article data-bento><span>VECTOR</span><h3>Index sémantique optionnel</h3><p>Recherche de fragments approuvés dans la connaissance publique. Pas de dossier client ni d'embedding en démo.</p><ul><li>pgvector possible</li><li>Seuil de similarité</li><li>Provenance conservée</li></ul><small>À activer seulement si nécessaire</small></article>
               <article data-bento><span>OBJECT</span><h3>Stockage documentaire</h3><p>Pièces et enregistrements futurs hors base SQL, chiffrés et référencés par identifiant opaque.</p><ul><li>Immutabilité</li><li>Hash d'intégrité</li><li>Rétention approuvée</li></ul><small>Désactivé dans la démo</small></article>
-              <article data-bento><span>EPHEMERAL</span><h3>Contexte de session</h3><p>État court nécessaire à la conversation : langue, intention et dernier résultat autorisé.</p><ul><li>TTL court</li><li>Aucune mémoire cachée</li><li>Suppression en fin de session</li></ul><small>Minimal par conception</small></article>
-              <article data-bento><span>AUDIT</span><h3>Journal append-only</h3><p>Événements techniques, version des règles et résultat des actions, sans contenu sensible dans les logs.</p><ul><li>Corrélation opaque</li><li>Horodatage</li><li>Accès restreint</li></ul><small>Cible avant production</small></article>
-              <article data-bento><span>SECRETS</span><h3>Coffre séparé</h3><p>Clés et jetons restent hors prompt, hors navigateur, hors base de connaissance et hors dépôt.</p><ul><li>Rotation</li><li>Scopes minimaux</li><li>Aucun secret côté client</li></ul><small>Gate de déploiement</small></article>
+              <article data-bento><span>SESSION</span><h3>Contexte temporaire</h3><p>État court nécessaire à la conversation&nbsp;: langue, intention et dernier résultat autorisé.</p><ul><li>Durée de vie courte</li><li>Aucune mémoire cachée</li><li>Suppression en fin de session</li></ul><small>Minimal par conception</small></article>
+              <article data-bento><span>AUDIT</span><h3>Journal non modifiable</h3><p>Événements techniques, version des règles et résultat des actions, sans contenu sensible dans les journaux.</p><ul><li>Corrélation opaque</li><li>Horodatage</li><li>Accès restreint</li></ul><small>Cible avant production</small></article>
+              <article data-bento><span>SECRETS</span><h3>Coffre séparé</h3><p>Clés et jetons restent hors instructions, hors navigateur, hors base de connaissance et hors dépôt.</p><ul><li>Rotation</li><li>Autorisations minimales</li><li>Aucun secret côté client</li></ul><small>Condition de mise en production</small></article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="trust-section" id="trust"><div class="shell">
-        <div class="section-heading light"><div><p class="kicker mint">RÉDUCTION DES HALLUCINATIONS & SÉCURITÉ</p><h2>Le modèle propose.<br />Le système contrôle.</h2></div><p>Aucun modèle probabiliste ne garantit zéro hallucination. La cible est d'empêcher qu'une réponse insuffisamment fondée soit présentée comme un fait : source autorisée, abstention, outil typé, preuve d'action et relais humain.</p></div>
-        <div class="trust-grid">
-          <article data-bento><header class="trust-card-heading"><span class="trust-icon"><svg aria-hidden="true" focusable="false"><use href="#i-clipboard" /></svg></span><b>01</b></header><h3>Sources avant formulation</h3><p>La réponse doit pointer vers un fragment approuvé avec source, langue et version. Sans source autorisée — ou avec un score insuffisant si la recherche sémantique est activée — le bot s'abstient.</p></article>
-          <article data-bento><header class="trust-card-heading"><span class="trust-icon"><svg aria-hidden="true" focusable="false"><use href="#i-lock" /></svg></span><b>02</b></header><h3>Outils fermés</h3><p>Les paramètres suivent un schéma strict. Champs inconnus, formats incorrects et permissions absentes sont rejetés.</p></article>
-          <article data-bento><header class="trust-card-heading"><span class="trust-icon"><svg aria-hidden="true" focusable="false"><use href="#i-doc-shield" /></svg></span><b>03</b></header><h3>Preuve d'exécution</h3><p>Le voicebot confirme une action uniquement après un résultat explicite. Timeout ou erreur ne deviennent jamais un succès.</p></article>
-          <article data-bento><header class="trust-card-heading"><span class="trust-icon"><svg aria-hidden="true" focusable="false"><use href="#i-shield" /></svg></span><b>04</b></header><h3>Injection cloisonnée</h3><p>Les paroles, pages et résultats d'outil restent des données non fiables. Ils ne peuvent réécrire le rôle ou révéler les instructions.</p></article>
-          <article data-bento><header class="trust-card-heading"><span class="trust-icon"><svg aria-hidden="true" focusable="false"><use href="#i-database" /></svg></span><b>05</b></header><h3>Données minimisées</h3><p>Pour un rappel, la démo collecte uniquement un nom et un numéro après consentement explicite. Elle ne demande ni dossier, ni date de naissance, ni IBAN, ni montant.</p></article>
-          <article data-bento><header class="trust-card-heading"><span class="trust-icon"><svg aria-hidden="true" focusable="false"><use href="#i-headset-out" /></svg></span><b>06</b></header><h3>Humain dans la boucle</h3><p>Dans l'architecture cible, KYC, offre, assurance, regroupement et cas sensibles seront routés vers un conseiller après déploiement.</p></article>
-        </div>
-        <div class="security-lanes" data-bento><div><b>Entrée</b><span>Consentement · rate limit · anti-replay · validation</span></div><i>→</i><div><b>Conversation</b><span>périmètre · sources · droits · abstention</span></div><i>→</i><div><b>Action</b><span>idempotence · timeout · preuve · audit</span></div><i>→</i><div><b>Sortie</b><span>PII · provenance · langage prudent · escalade</span></div></div>
-        <div class="privacy-banner"><svg aria-hidden="true" focusable="false"><use href="#i-shield" /></svg><p>Après consentement, l'audio de démonstration est conservé au maximum 30 jours. N'utilisez aucune donnée bancaire ou sensible et privilégiez des coordonnées fictives.</p></div>
+      <section class="trust-section" id="trust" aria-labelledby="trust-title"><div class="shell">
+        <div class="section-heading trust-hero"><div><p class="kicker mint">ARCHITECTURE DE PRODUCTION</p><h2 id="trust-title">La maîtrise de l’information, <span>au cœur du voicebot.</span></h2><p class="trust-intro">Des connaissances gouvernées, des contrôles en entrée et en sortie, des accès vérifiés pendant l’exécution.</p></div><p class="trust-pill">Données · Sécurité · Performance</p></div>
+
+        <section class="trust-block trust-foundation" aria-labelledby="trust-foundation-title">
+          <p class="trust-section-label">LA GOUVERNANCE DES DONNÉES COMME FONDATION</p>
+          <article class="trust-foundation-card" data-bento>
+            <div class="trust-card-copy"><h3 id="trust-foundation-title">Des connaissances <br />structurées et gouvernées</h3><p>Les contenus métier sont validés, structurés et versionnés. Chaque source conserve sa provenance, sa validité et ses droits d’accès. La recherche est limitée aux informations autorisées pour la demande.</p><ul class="trust-chips" aria-label="Principes de gouvernance"><li>Sources validées</li><li>Versions</li><li>Droits d’accès</li><li>Mises à jour</li></ul></div>
+            <div class="trust-visual trust-visual-foundation" aria-hidden="true"><img src="assets/security-01-governed-knowledge.webp" width="960" height="480" loading="lazy" decoding="async" alt="" /></div>
+          </article>
+        </section>
+
+        <section class="trust-exchange" aria-labelledby="trust-exchange-title">
+          <header class="trust-block-heading"><p class="trust-section-label">CONTRÔLER L’ÉCHANGE</p><h3 id="trust-exchange-title">Entrée et sortie contrôlées, contexte maîtrisé.</h3></header>
+          <div class="trust-exchange-grid">
+            <article class="trust-control-card" data-bento><div class="trust-visual" aria-hidden="true"><img src="assets/security-02-entry-control.webp" width="960" height="480" loading="lazy" decoding="async" alt="" /></div><h4>Contrôle des entrées</h4><p>Transcriptions, documents et résultats d’outils sont évalués avant utilisation&nbsp;: tentatives de prompt injection, données sensibles et demandes hors périmètre. Les contenus reçus restent distincts des instructions.</p></article>
+            <article class="trust-control-card" data-bento><div class="trust-visual" aria-hidden="true"><img src="assets/security-03-context-orchestration.webp" width="960" height="480" loading="lazy" decoding="async" alt="" /></div><h4>Contexte &amp; orchestration</h4><p>L’état du dialogue, les informations confirmées et les étapes autorisées sont suivis. Le contexte de chaque session et les boucles d’outils sont bornés. Les ambiguïtés déclenchent une clarification.</p></article>
+            <article class="trust-control-card" data-bento><div class="trust-visual" aria-hidden="true"><img src="assets/security-04-response-validation.webp" width="960" height="480" loading="lazy" decoding="async" alt="" /></div><h4>Validation des réponses</h4><p>La réponse est limitée par les sources disponibles, le périmètre métier et les règles de confidentialité. Une information insuffisamment étayée conduit à une clarification, une réponse limitée ou un relais humain.</p></article>
+          </div>
+        </section>
+
+        <section class="trust-block trust-execution" aria-labelledby="trust-execution-title">
+          <h3 class="trust-section-label" id="trust-execution-title">MAÎTRISER L’EXÉCUTION ET LA PERFORMANCE</h3>
+          <div class="trust-execution-grid">
+            <article class="trust-execution-card" data-bento><div class="trust-visual" aria-hidden="true"><img src="assets/security-05-tools-permissions.webp" width="960" height="480" loading="lazy" decoding="async" alt="" /></div><div class="trust-card-copy"><h4>Outils &amp; permissions</h4><p>Fonctions autorisées, paramètres typés et permissions restreintes. L’application vérifie l’identité, les droits et les règles métier avant exécution. Une réussite est annoncée après confirmation du système concerné.</p><ul class="trust-chips" aria-label="Contrôles d’exécution"><li>Délais maximums</li><li>Tentatives bornées</li><li>Idempotence</li></ul></div></article>
+            <article class="trust-execution-card" data-bento><div class="trust-visual" aria-hidden="true"><img src="assets/security-06-latency-continuity.webp" width="960" height="480" loading="lazy" decoding="async" alt="" /></div><div class="trust-card-copy"><h4>Latence &amp; continuité</h4><p>Un budget de latence couvre toute la chaîne vocale. Les traitements indépendants sont parallélisés et les segments validés avant diffusion. La supervision suit les temps de réponse, les erreurs et les situations de repli.</p><ul class="trust-chips" aria-label="Contrôles de performance"><li>Mesures p50 / p95</li><li>Streaming contrôlé</li><li>Repli</li></ul></div></article>
+          </div>
+        </section>
+
+        <article class="trust-trace-card" data-bento><div class="trust-visual trust-visual-trace" aria-hidden="true"><img src="assets/security-07-data-traceability.webp" width="960" height="480" loading="lazy" decoding="async" alt="" /></div><div class="trust-trace-copy"><h3>Protection des données &amp; traçabilité</h3><p>Les accès, le chiffrement et les durées de conservation sont définis et validés avant la production. Les sources, contrôles et opérations restent traçables avec des journaux minimisés.</p><ul class="trust-trace-points" aria-label="Mesures de protection"><li>Chiffrement</li><li>Cloisonnement</li><li>Conservation</li><li>Audit</li></ul></div></article>
       </div></section>
 
-      <section class="final-cta"><div class="shell"><div><p class="kicker mint">PROTOTYPE MOZZENO</p><h2>Une voix naturelle.<br />Un système qui reste maître.</h2></div><button class="button light-button call-open" type="button">Tester la conversation <span>→</span></button></div></section>
+      <section class="final-cta"><div class="shell"><div><p class="kicker mint">DÉMONSTRATEUR INBOUND · CAPACITÉ OUTBOUND</p><h2>Une conversation naturelle.<br />Des actions qui restent vérifiables.</h2></div><button class="button light-button call-open" type="button">Tester la conversation <span>→</span></button></div></section>
     </main>
 
     <footer class="site-footer" id="footer">
       <div class="shell footer-grid">
-        <div class="footer-brand"><span class="footer-logo-frame"><img src="assets/brand/banana-navy-logo.png" alt="Banana Navy" /></span><div><h2>Trusted voice agents<br />&amp; agentic systems</h2><p>Nous concevons des VoiceBots sécurisés et hybrides, alliant intelligence vocale et systèmes de contrôle fiables.</p></div></div>
-        <div><h2 class="kicker muted">Nos engagements cibles</h2><ul class="commitment-grid"><li><span><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#i-clock" /></svg></span><b>Disponibilité cible<br />24 h/24</b></li><li><span><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#i-lock" /></svg></span><b>Réponses<br />sous contrôle</b></li><li><span><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#i-shield" /></svg></span><b>Sécurité<br />et RGPD</b></li><li><span><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#i-database" /></svg></span><b>Données<br />gouvernées</b></li></ul></div>
+        <div class="footer-brand"><span class="footer-logo-frame"><img src="assets/brand/banana-navy-logo.png" alt="Banana Navy" /></span><div><h2>Trusted voice agents<br />&amp; agentic systems</h2><p>Nous concevons des voicebots inbound et outbound qui associent intelligence vocale, orchestration métier et contrôles de sécurité.</p></div></div>
+        <div><h2 class="kicker muted">Principes de conception</h2><ul class="commitment-grid"><li><span><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#i-clock" /></svg></span><b>Accueil<br />trilingue</b></li><li><span><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#i-lock" /></svg></span><b>Actions<br />autorisées</b></li><li><span><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#i-shield" /></svg></span><b>Protection<br />des données</b></li><li><span><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#i-database" /></svg></span><b>Traçabilité<br />des opérations</b></li></ul></div>
         <div class="footer-contact"><h2 class="kicker muted">Contact</h2><address><strong>Marc-Antoine Cajot</strong><a href="tel:+32495277044">+32 495 277 044</a><a href="mailto:marc@banana-navy.com">marc@banana-navy.com</a><a href="https://www.banana-navy.ai" target="_blank" rel="noreferrer">www.banana-navy.ai</a><span>Rue Antoine de Saint-Exupéry 2<br />6041 Charleroi, Belgique</span></address></div>
       </div>
-      <div class="shell partner-band"><div><p class="kicker muted">Programme &amp; institutions partenaires</p><div class="partner-logos"><span class="partner-logo partner-logo--defence"><img src="assets/brand/badge-defence.png" alt="Défense belge" /></span><span class="partner-logo partner-logo--crest"><img src="assets/brand/badge-crest-royal.png" alt="Écusson royal" /></span><span class="partner-logo partner-logo--strike"><img src="assets/brand/badge-strike-it.png" alt="STRIKE IT" /></span><span class="partner-logo partner-logo--cyber"><img src="assets/brand/badge-cyberforce.png" alt="Cyber Force" /></span></div></div><div><p>Banana Navy a été sélectionnée et est soutenue par la Défense belge dans le cadre du programme STRIKE IT, pour le développement d'une technologie de VoiceBot sécurisée et fiable.</p><p lang="en">Banana Navy has been selected and is supported by the Belgian Defence through the STRIKE IT program for the development of secure and reliable VoiceBot technology.</p><small>Cette sélection concerne Banana Navy et ne constitue pas une certification de mozzeno.</small></div></div>
-      <div class="shell footer-bottom"><span>mozzeno Welcome - démonstrateur</span><span>Aucun dossier client connecté · aucune décision de crédit</span><span>© 2026 Banana Navy</span></div>
+      <div class="shell partner-band"><div><p class="kicker muted">Programme &amp; institutions partenaires</p><div class="partner-logos"><span class="partner-logo partner-logo--defence"><img src="assets/brand/badge-defence.png" alt="Défense belge" /></span><span class="partner-logo partner-logo--crest"><img src="assets/brand/badge-crest-royal.png" alt="Écusson royal" /></span><span class="partner-logo partner-logo--strike"><img src="assets/brand/badge-strike-it.png" alt="STRIKE IT" /></span><span class="partner-logo partner-logo--cyber"><img src="assets/brand/badge-cyberforce.png" alt="Cyber Force" /></span></div></div><div><p>Banana Navy a été sélectionnée avec Sirris dans le cadre du programme STRIKE IT 2026 pour développer une solution de communication vocale robuste destinée à la Défense belge.</p><p lang="en">Banana Navy was selected with Sirris for the STRIKE IT 2026 programme to develop a robust voice communication solution for Belgian Defence.</p><small>Cette sélection concerne Banana Navy et ne constitue pas une certification de mozzeno.</small></div></div>
+      <div class="shell footer-bottom"><span>mozzeno Welcome · démonstrateur inbound</span><span>Solution outbound disponible · aucune décision de crédit</span><span>© 2026 Banana Navy</span></div>
     </footer>
 
     <div class="call-panel" aria-hidden="true" hidden>
@@ -234,10 +280,10 @@
       <section class="panel-card" role="dialog" aria-modal="true" aria-labelledby="call-title">
         <button class="panel-close" type="button" aria-label="Fermer">×</button>
         <div class="panel-orb"><span></span><span></span><svg aria-hidden="true" focusable="false"><use href="#i-mic" /></svg></div>
-        <p class="kicker accent">SESSION VOCALE HAUTE FIDÉLITÉ</p>
+        <p class="kicker accent">SESSION VOCALE EN DIRECT</p>
         <h2 id="call-title">Parlez à mozzeno Welcome</h2>
         <p class="panel-copy">La voix système du navigateur n'est pas utilisée. Cette interface ouvre uniquement le moteur vocal temps réel de la démo.</p>
-        <div class="engine-state" role="status"><span></span><div><b>Agent démo non connecté</b><small>La connexion sécurisée du moteur vocal doit encore être activée pour ce prototype.</small></div></div>
+        <div class="engine-state" role="status"><span></span><div><b>Vérification de la connexion…</b><small>Le moteur vocal sécurisé se prépare.</small></div></div>
         <div id="voice-agent-mount" class="voice-runtime" data-state="unconfigured">
           <div class="voice-runtime-meta">
             <span class="voice-language" aria-label="Langues détectées automatiquement">FR · NL · EN <b>AUTO</b></span>
@@ -255,6 +301,7 @@
           </div>
           <div class="voice-recovery" hidden>
             <button class="voice-retry" type="button">Réessayer</button>
+            <a class="voice-phone" href="tel:+3271496732">Appeler le voicebot · +32 71 49 67 32</a>
             <a href="https://www.mozzeno.com/fr/support-et-contact/" target="_blank" rel="noreferrer">Contacter un conseiller</a>
           </div>
           <button class="voice-export" type="button" disabled>Exporter les métriques techniques</button>
@@ -264,7 +311,7 @@
       </section>
     </div>
 
-    <script src="config.js?v=20260908-1"></script>
-    <script src="app.bundle.js?v=20260908-1"></script>
+    <script src="config.js?v=20261016-7"></script>
+    <script src="app.bundle.js?v=20261016-7"></script>
   </body>
 </html>
